@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.carousel-item img {
+    position: relative;
+    width: 100vmax;
+    height: 75vmax;
+}
+
+header.row {
+    background-image: linear-gradient( to right, rgb(202, 151, 109), rgb(151, 160, 172), rgb(158, 127, 106), rgb(182, 177, 137));
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100vmax;
+}
+
+header.row p img {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+}
+
+header.row div {
+    position: absolute;
+    width: 100vmax;
+}
+
+header.row div h1 {
+    margin-left: 40%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 25px;
+    font-family: 'Gotu', sans-serif;
+    width: 100%;
+}
+
+header.row div h1 span.wd {
+    font-size: 14px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    z-index: 3;
+    line-height: 3;
+    font-family: 'Gotu', sans-serif;
+    margin-left: -2%;
+}
+
+header.row nav.un {
+    width: 100vmax;
+    position: relative;
+    top: 10px;
+    padding-right: 0;
+}
+
+header.row nav.un ul.nav1 {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    right: 1%;
+    list-style: none;
+}
+
+header.row nav.un ul.nav1 li:hover .sous {
+    display: block;
+}
+
+header.row nav.un li ul.sous {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    list-style: initial;
+    background-color: #dfc9b7;
+    top: 27px;
+    width: 130px;
+    left: 35%;
+    border-radius: 2px;
+}
+
+header.row nav.un ul.nav1 li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+header.row nav.un li a {
+    color: #363a36;
+    font-weight: bold;
+    font-family: 'Baskerville', serif;
+}
+
+header.row nav.un li a span {
+    color: #382d1a;
+    font-weight: bold;
+    font-family: 'Baskerville', serif;
+    padding-top: 4px;
+    position: absolute;
+}
+
+header.row nav.un ul.sous li {
+    text-align: center;
+    padding: 3px;
+    margin: 0;
+}
+
+header.row nav.un ul.sous li a {
+    color: rgb(102, 100, 100);
+    text-align: justify;
+    font-size: 15px;
+}
+
+header.row ul.sous li a:hover {
+    color: rgb(156, 52, 52);
+    text-align: justify;
+    text-decoration-color: rgb(0, 42, 97);
+}
+
+header.row nav.un li ul.sous::after {
+    content: "";
+    clear: both;
+}
+
+p#merci {
+    position: absolute;
+    color: #37269c;
+    padding: 7px;
+    left: 38%;
+    font-size: 18px;
+    z-index: 5;
+}
+
+form.contact {
+    z-index: 3;
+    position: relative;
+    border: 3px solid #887b70;
+    border-radius: 8px;
+    background-color: #bba898;
+    width: 556px;
+    height: 650px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+div.form {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    z-index: 3;
+}
+
+input {
+    width: 450px;
+    height: 35px;
+    margin: auto;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+button.envoyer {
+    width: 100px;
+    height: 30px;
+    margin-top: 3%;
+    margin-left: 42%;
+    font-family: 'Baskerville', serif;
+}
+
+label {
+    font-family: 'Baskerville', serif;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+textarea {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+}
+
+
+/*footer.row {
+    display:flex;
+    justify-content: space-around; 
+     background-color: rgb(155, 145, 145);
+     z-index: 2;  
+     height: 100px; 
+     width:100vmax;
+     margin-top:0%;
+ }
+footer.row ul { 
+    width:100vmax;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;  
+    background-color: rgb(155, 145, 145);
+    z-index: 2;
+    list-style: none;    
+   margin-left:20%;
+}
+
+
+footer.row ul li{
+    color: #1c1c3b; 
+    font-size: 15px;
+    align-self: center;
+    width:100%;
+}
+
+footer.row ul li img {
+    width:55px;
+    height:55px;
+    margin-top:5px;
+}*/
+
+footer.row {
+    position: absolute;
+    background-color: rgb(155, 145, 145);
+    z-index: 2;
+    width: 100vmax;
+    height: 100px;
+}
+
+footer.row ul {
+    background-color: rgb(155, 145, 145);
+    z-index: 2;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+footer.row ul li {
+    color: #1c1c3b;
+    font-size: 15px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+footer.row ul li img {
+    margin-top: -5px;
+}
+
+@media (max-width: 915px) {
+    header.row nav.un {
+        top: 45px;
+        z-index: 4;
+        position: relative;
+        width: 100vmax;
+    }
+    header.row nav.un ul.nav1 {
+        top: 50px;
+        background-color: #dfb07c;
+        position: absolute;
+        width: 100vmax;
+        height: 40px;
+        margin: auto;
+        padding-left: 14%;
+        z-index: 4;
+    }
+    header.row nav.un ul.nav1 li {
+        width: 100%;
+        margin: auto;
+    }
+    header.row nav.un li:hover .sous {
+        display: block;
+    }
+    header.row nav.un li .sous {
+        display: none;
+        position: absolute;
+        list-style: initial;
+        background-color: #dfc9b7;
+        top: 25px;
+        width: 130px;
+        margin-left: 9%;
+        border-radius: 2px;
+    }
+    form.contact {
+        position: relative;
+        border: 3px solid #887b70;
+        border-radius: 8px;
+        background-color: #bba898;
+        padding: 10px;
+        width: 460px;
+        height: 440px;
+        margin: auto;
+        z-index: 3
+    }
+    div.form {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        margin-top: 10%;
+        z-index: 3;
+    }
+    input {
+        width: 410px;
+        height: 35px;
+        margin: auto;
+    }
+    textarea {
+        width: 410px;
+        height: 150px;
+        margin: auto;
+    }
+    button.envoyer {
+        width: 80px;
+        margin-left: 40%;
+        font-family: 'Baskerville', serif;
+    }
+    p#merci {
+        position: absolute;
+        color: #37269c;
+        padding: 7px;
+        left: 36%;
+        font-size: 18px;
+        z-index: 5;
+    }
+    label {
+        font-family: 'Baskerville', serif;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    footer.row {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(155, 145, 145);
+        z-index: 2;
+        height: 100px;
+        width: 100vmax;
+        margin-top: 0%;
+    }
+    footer.row ul {
+        margin-right: 50px;
+        z-index: 2;
+        margin-left: 0%;
+    }
+    footer.row ul li {
+        margin: auto;
+        margin-left: 24px;
+        margin-right: 0px;
+    }
+}

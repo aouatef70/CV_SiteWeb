@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gotu|Playfair+Display|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="row">
+            <p>
+                <img src="asset/images/monlogo.png" alt="logo" class="img-fluid">
+            </p>
+            <div>
+                <h1>
+                    AOUATEF MECHEMECHE<br><span class="wd">Passionnée par la programmation !</span>
+                </h1>
+            </div>
+            <nav class="un container-fluid">
+                <ul class="nav1">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Certificats<span>&#9660;</span></a>
+                        <ul class="sous">
+                            <li><a href="asset/php_et_sql.pdf" target="_blank">php-sql</a></li>
+                            <li><a href="asset/html_et_css.pdf" target="_blank">html-css</a></li>
+                            <li><a href="asset/formation-bureautique.JPG" target="_blank">bureautique</a></li>
+                            <li><a href="asset/test_PCIE.JPG" target="_blank">test-pcie</a></li>
+                            <li><a href="asset/comprendre-le-web.pdf" target="_blank">comprendre le web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <menu class="row">
+            <div id="carouselExampleFade" class="carousel carousel-fade" contentdata-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="asset/images/image1.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image2.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image3.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image4.jpg" class=" d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image5.jpg" class="d-block" alt="image">
+                    </div>
+                </div>
+            </div>
+            <article>
+                <em>À propos de moi...</em><br>
+                <p>« Je suis autodidacte,passionnée par la programmation et par toute nouveauté dans le domaine informatique,curieuse et persévérante,dotée des bonnes connaissances en développement web (html, css, js, php, sql, seo, jquery, wordpress...),
+                    j'ai réalisé ce portfolio pour montrer aux recruteurs ce que je sais faire dans le domaine de développement, en continuant à me former dans une école des Métiers du Numérique à l'espoir de trouver un stage ou un contrat CDI dans une
+                    entreprise de développement web.<br>Vous allez découvrir aussi dans ce site quelques maquettes repensées que j'aie réalisé avec mes propres codes (html, css, js et php) »<br> Bonne visite !</p>
+            </article>
+            <div class="citation">
+                <span> <h2>Mon slogan</h2>
+                <p>&#8220; <em>Dans la vie, je ne perds jamais, soit je gagne, soit j'apprends</em>
+                    &#8222;<br>
+                    <q>Nelson Mandela</q></p></span>
+            </div>
+            <div class="marge">
+                <div class="cercle3D" id="divCercle">
+                    <div class="slider" id="slid">
+                        <div class="item a" id="un" onclick="change()" onmouseover="change1()">Expériences</div>
+                        <div class="item b" id="deux" onclick="change2()" onmouseover="change3()">Certificats</div>
+                        <div class="item c" id="trois" onclick="change4()" onmouseover="change5()">Langues</div>
+                        <div class="item d" id="quatre" onclick="change6()" onmouseover="change7()">Coordonnées</div>
+                    </div>
+                    <input type="button" value="Initialisez" id="return" onclick="retour()">
+                </div>
+                <div class="articles">
+                    <p id="articleC" onclick="artC()">
+                        <span>COORDONNÉES</span><br> Adresse: 39 rue Emile Zola,<br> 91100 Corbeil-essonnes<br> Téléphone: 07 51 53 56 31<br> Email: aouatef.mech@gmail.com <br>
+                    </p>
+                    <p id="articleL" onclick="artL()">
+                        <span>LANGUES</span><br> * Arabe Litteraire: Compétence professionnelle complète<br> * Français: Compétence professionnelle limitée<br> * Anglais: Notions élémentaires<br>
+                    </p>
+                    <p id="articleD" onclick="artD()">
+                        <span>CERTIFICATS</span><br> 1) Certificat des compétences informatiques:<br> Mars 2019|Mai 2019 (Open-classrooms)
+                        <br> * Certificat HTML5 et CSS3<br> * Certificat PHP et SQL<br> 2) Certificat des compétences bureautiques:<br> 2017|septembre 2017
+                        <br> (Centre de formation l'AFPA|Ris-orangis)<br> * Word<br> * Excel<br> * traitement de texte
+                        <br> 3)Licence fondamentale:<br> (Institut supérieur de théologie|Tunis)<br> =>reconnu par enic-naric en France
+                    </p>
+                    <p id="articleE" onclick="artE()">
+                        <span>EXPERIENCES</span><br> 1) formation développement web:<br> juin 2019 | juin 2020<br>( Association Colombbus Paris 75010)<br> * langages informatiques html,css,js,php,sql,bootstrap,wordpresse
+                        <br> * Réalisation des sites internet pour des clients(conception maquettes, intégration web...) <br> 2)Animatrice: <br>août 2017 | septembre 2017<br> (Association Habitat et humanisme Paris 75020)<br> * Accueillir les émigrants.
+                        <br> * Les accompagner pour les procédures administratives.
+                        <br> * Traduction orale Français | Arabe <br> 3)Surveillante de Cantines:<br> janvier 2018 | juin 2020 <br> (Mairie de Corbeil-essonnes)<br> * Accueillir les enfants à la sortie des classes.
+                        <br> * Assurer la sécurité des enfants.<br> * Pratiquer les premiers soins en cas d'accident.
+                    </p>
+                </div>
+            </div>
+            <div class="global" id="divGlobale">
+                <div id="rectangle2"></div>
+                <div id="rectangle">
+                    <div id="dossier">
+                        <div id="feuille1"><a href="asset/dossier_maquette1/maquette1.html" target="_blank">Site1</a>
+                        </div>
+                        <div id="feuille2"><a href="asset/dossier_maquette2/maquette2.html" target="_blank">Site2</a>
+                        </div>
+                        <div id="feuille3"><a href="asset/dossier_maquette3/maquette3.html" target="_blank">Site3</a>
+                        </div>
+                        <div id="feuille4"><a href="asset/dossier_maquette4/maquette4.html" target="_blank">Site4</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="rectangle3" onclick="firstclick()">
+                    <div class="maquette"><span>Sites web</span><br>en Front-end</div>
+                    <div class="doigtVersLeHaut" id="doigtVersLeHaut"><img src="asset/images/index-vers-le-haut.png"><br><span>cliquez</span></div>
+                </div>
+            </div>
+            <footer class="row">
+                <ul>
+                    <li>&copy; | 2020<br>Tous droits réservés</li>
+                    <li>CONTACT &#9990;<br>+33 7 51 53 56 31</li>
+                    <li><img src="asset/images/logo.png" type="logo" /></li>
+                </ul>
+            </footer>
+            <script src="script.js"></script>
+        </menu>
+    </div>
+</body>
+
+</html>
